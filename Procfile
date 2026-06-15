@@ -1,1 +1,1 @@
-grafana: python scripts/entrypoint.py
+grafana: monitoring_grafana/entrypoint.py
