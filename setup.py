@@ -21,8 +21,10 @@ def download_release():
             "-L",
             "-o",
             f"/tmp/grafana_{TARGET_RELEASE_VERSION}_{TARGET_RELEASE_HASH}_linux_amd64.tar.gz",
+            (
             f"https://dl.grafana.com/grafana/release/{TARGET_RELEASE_VERSION}/"
-            f"grafana_{TARGET_RELEASE_VERSION}_{TARGET_RELEASE_HASH}_linux_amd64.tar.gz",
+            f"grafana_{TARGET_RELEASE_VERSION}_{TARGET_RELEASE_HASH}_linux_amd64.tar.gz"
+            ),
         ],
         check=True,
     )

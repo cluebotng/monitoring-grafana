@@ -23,8 +23,10 @@ def main():
             "-L",
             "-o",
             f"/tmp/grafana_{release_version}_{release_hash}_linux_amd64.tar.gz",
-            f"https://dl.grafana.com/grafana/release/{release_version}/"
-            f"grafana_{release_version}_{release_hash}_linux_amd64.tar.gz",
+            (
+                f"https://dl.grafana.com/grafana/release/{release_version}/"
+                f"grafana_{release_version}_{release_hash}_linux_amd64.tar.gz"
+            ),
         ],
         check=True,
     )
