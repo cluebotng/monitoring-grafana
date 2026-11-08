@@ -52,7 +52,7 @@ jobs:
       packages: read
     services:
       tools-db:
-        image: mariadb:10.11
+        image: mariadb:13.0
         env:
           MARIADB_RANDOM_ROOT_PASSWORD: "yes"
           MARIADB_DATABASE: ci__grafana
