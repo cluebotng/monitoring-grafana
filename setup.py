@@ -4,7 +4,7 @@ import subprocess
 from pathlib import PosixPath
 
 WORKSPACE_DIR = PosixPath("/workspace")
-TARGET_RELEASE_VERSION = "13.3.0"
+TARGET_RELEASE_VERSION = "13.3.1"
 
 
 def download_release():
